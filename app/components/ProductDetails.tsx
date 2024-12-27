@@ -1,4 +1,3 @@
-
 "use client"
 import { Button } from '@/components/ui/button';
 import { Star, Truck } from 'lucide-react';
@@ -9,7 +8,7 @@ import Checkout from './Checkout';
 import { detailedProduct } from '../interface';
 
 const ProductDetails = ({ data }: {data: detailedProduct}) => {
-    const [size, setSize] = useState("  ");
+    const [size, setSize] = useState("");
 
     return (
         <div className=''>
@@ -19,7 +18,7 @@ const ProductDetails = ({ data }: {data: detailedProduct}) => {
             </div>
 
             <div className='mb-6 flex items-center gap-3'>
-                <Button className='rounded-full gap-x-2 font-bold bg-blue-600'>
+                <Button className='rounded-full gap-x-2 font-bold bg-blue-600 hover:bg-blue-700'>
                     <span className='text-md'>4.5</span>
                     <Star className='size-5' />
                 </Button>

@@ -31,7 +31,7 @@ const AddToBag = ({ currency, description, image, name, price, price_id, size, s
             currency: currency,
             image: urlFor(image).url(),
             size: size,
-            price_id: price_id
+            price_id: `${price_id}_${size}`
         }
 
         addItem(product);
@@ -40,7 +40,7 @@ const AddToBag = ({ currency, description, image, name, price, price_id, size, s
     }
 
     return (
-        <Button onClick={() => handleAddToBagClick()} className='bg-blue-600'>Add to Bag</Button>
+        <Button onClick={() => handleAddToBagClick()} className='bg-blue-600 hover:bg-blue-700'>Add to Bag</Button>
     )
 }
 

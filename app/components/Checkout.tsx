@@ -27,7 +27,7 @@ const Checkout = ({ currency, description, image, name, price, price_id, size, s
     }
 
     return (
-        <Button onClick={() => handleCheckoutClick()} variant={"secondary"}>Add to Bag</Button>
+        <Button onClick={() => handleCheckoutClick()} variant={"secondary"}>Checkout</Button>
     )
 }
 
